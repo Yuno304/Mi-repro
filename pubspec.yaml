@@ -1,21 +1,21 @@
 name: mi_repro
-description: Reproductor de video Flutter
+description: Reproductor avanzado con vision nocturna y zoom.
 publish_to: 'none'
-
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.17.0 <4.0.0"
+  sdk: '>=3.0.0 <4.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
-  video_player: ^2.6.1
-  chewie: ^1.5.0
+  video_player: ^2.9.2
+  chewie: ^1.8.5
+  screen_brightness: ^2.0.0+2
+  wakelock_plus: ^1.2.8
+  file_picker: ^8.1.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-flutter:
-  uses-material-design: true
