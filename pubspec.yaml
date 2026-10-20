@@ -13,7 +13,7 @@ dependencies:
   chewie: ^1.8.5
   screen_brightness: ^2.0.0+2
   wakelock_plus: ^1.2.8
-  file_picker: ^6.1.1
+  image_picker: ^1.0.4
 
 dev_dependencies:
   flutter_test:
@@ -21,4 +21,3 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-
