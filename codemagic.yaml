@@ -1,0 +1,15 @@
+workflows:
+  mi-repro-workflow:
+    name: Generar APK Android
+    instance_type: mac_mini_m2
+    environment:
+      flutter: stable
+    scripts:
+      - name: Crear estructura nativa de Android
+        script: flutter create --platforms=android .
+      - name: Descargar dependencias
+        script: flutter pub get
+      - name: Compilar la aplicacion
+        script: flutter build apk --debug
+    artifacts:
+      - build/app/outputs/flutter-apk/app-debug.apk
